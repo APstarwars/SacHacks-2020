@@ -1,0 +1,12 @@
+body {
+  margin: auto;
+  font-family: sans-serif;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/****/
