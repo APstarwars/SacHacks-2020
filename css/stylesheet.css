@@ -9,4 +9,30 @@ div {
   flex-direction: column;
 }
 
+.navBar {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.navBar p {
+  color: white;
+  float: left;
+  padding: 2% 4% 2% 4%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navBar a {
+  color: white;
+  float: right;
+  padding: 2% 4% 2% 4%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navBar a:hover {
+  text-decoration: underline;
+}
+
 /****/
