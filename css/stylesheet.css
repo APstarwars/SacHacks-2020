@@ -1,7 +1,18 @@
 body {
   margin: auto;
-  font-family: sans-serif;
-  background-color: purple;
+	font-family: 'Saira', sans-serif;
+	background: #0c1A22;
+	color: #fff;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  height: 100px;
+	background: #050505;
 }
 
 div {
@@ -10,21 +21,7 @@ div {
   flex-direction: column;
 }
 
-.navBar {
-  background-color: black;
-  color: white;
-  width: 100%;
-}
-
-.navBar p {
-  color: white;
-  float: left;
-  padding: 2% 4% 2% 4%;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.navBar a {
+a {
   color: white;
   float: right;
   padding: 2% 4% 2% 4%;
@@ -32,7 +29,7 @@ div {
   font-weight: bold;
 }
 
-.navBar a:hover {
+a:hover {
   text-decoration: underline;
 }
 
@@ -61,4 +58,31 @@ div {
   clear: both;
 }
 
-/****/
+/*-----Typography------*/
+
+@font-face {
+	font-family: OutageCut;
+	src: url(fonts/branding/Outage_Cut.ttf);
+}
+
+h1{
+  font-size: 3em;
+  float: left;
+}
+
+h2{
+	font-family: 'OutageCut',  sans-serif;
+	font-size: 1.8em;
+}
+
+/* .statlist{	//stats in folder format
+	background: #0b1013;
+}
+
+.statlist h2{	//h2(titles) of statistics folder section
+	background: #0b1013;
+} */
+
+p{
+	font-size: 1em;
+}
