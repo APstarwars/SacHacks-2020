@@ -133,3 +133,10 @@ p{
 	left: 100px;
 	height: 50px;
 }
+
+.gif {
+  position: absolute;
+  top: 130px;
+  left: 800px;
+	height: 200px;
+}
