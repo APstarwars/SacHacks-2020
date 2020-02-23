@@ -8,40 +8,25 @@ with open('2k Player Stats.csv', newline='') as csvfile:
     for row in reader:
         empty_list.append(row)
 
-full_stat_player = ''
+dict2 = {}
 f = open("All_Players_Stats.txt", "w")
+f.write('[')
 for x in range(len(empty_list)): 
     for y in empty_list[x].keys():
 
-        var1 = '{}: {}, '.format(y, empty_list[x][y])
-        full_stat_player += var1
+        dict1 = {y: empty_list[x][y]}
+        dict2.update(dict1)
 
-
-    full_stat_player = full_stat_player.rstrip(', ')
-
-    full_stat_player += "\n"
-
-    json_string = json.dumps(full_stat_player)
+    json_string = json.dumps(dict2)
     f.write(json_string)
+    if x == len(empty_list) -1:
+        pass
+    else:
+        f.write(',')
+f.write(']')
 
-    full_stat_player = ''
 f.close()
 
 
-# Before JSON file editing, this will be normal txt
-# full_stat_player = ''
-# f = open("All_Players_Stats.txt", "w")
-# for x in range(len(empty_list)): # 126
-#     for y in empty_list[x].keys():
 
-#         var1 = '{}: {}, '.format(y, empty_list[x][y])
-#         full_stat_player += var1
-
-#     full_stat_player = full_stat_player.rstrip(', ')
-    
-#     f.write(full_stat_player)
-#     f.write("\n")
-
-#     full_stat_player = ''
-# f.close()
 
