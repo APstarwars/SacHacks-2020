@@ -17,7 +17,6 @@ function playerParser() {
       var myObj = JSON.parse(this.responseText);
       for (let x = 0; x < myObj.length; x++) {
         document.getElementsByClassName("players")[x].innerHTML = myObj[x].Player;
-        document.getElementsByClassName("stat1")[x].innerHTML = myObj[x].Team;
       }
     };
     xmlhttp.open("GET", "data/All_Players_Ranking.txt", true);
