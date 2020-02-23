@@ -6,8 +6,17 @@ function teamsParser() {
       for (let x = 0; x < myObj.length; x++) {
         document.getElementsByClassName("teams")[x].innerHTML = myObj[x].Team;
         document.getElementsByClassName("FGM")[x].innerHTML = myObj[x].FGP;
+        if(myObj[x].FGP == "FGP: Weaknesses"){
+          document.getElementsByClassName("FGM")[x].classList.add("weak");
+        }
         document.getElementsByClassName("PTS")[x].innerHTML = myObj[x].Points;
+        if(myObj[x].Points == "Points: Weaknesses"){
+          document.getElementsByClassName("PTS")[x].classList.add("weak");
+        }
         document.getElementsByClassName("AST")[x].innerHTML = myObj[x].Assists;
+        if(myObj[x].Assists == "Assists: Weaknesses"){
+          document.getElementsByClassName("AST")[x].classList.add("weak");
+        }
       }
     };
     xmlhttp.open("GET", "data/Team_Weak_Str.txt", true);
@@ -22,8 +31,17 @@ function playerParser() {
         document.getElementsByClassName("players")[x].innerHTML = myObj[x].Player;
         document.getElementsByClassName("players")[x].setAttribute("id", myObj[x].Team);
         document.getElementsByClassName("FGM")[x].innerHTML = myObj[x].FGM;
+        if(myObj[x].FGM <= 50){
+          document.getElementsByClassName("FGM")[x].classList.add("weak");
+        }
         document.getElementsByClassName("PTS")[x].innerHTML = myObj[x].PTS;
+        if(myObj[x].PTS <= 100){
+          document.getElementsByClassName("PTS")[x].classList.add("weak");
+        }
         document.getElementsByClassName("AST")[x].innerHTML = myObj[x].AST;
+        if(myObj[x].AST <= 30){
+          document.getElementsByClassName("AST")[x].classList.add("weak");
+        }
       }
     };
     xmlhttp.open("GET", "data/All_Players_Ranking.txt", true);
