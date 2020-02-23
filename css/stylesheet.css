@@ -5,36 +5,76 @@ body{
 	color: #fff;
 }
 
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  padding-bottom: 100px;
+  width: 100vw;
+}
+
+header section{
+  padding-left: 100px;
+}
+
 nav{
-	height: 100px;
+	height: 80px;
 	background: #050505;
   display: flex;
   justify-content: flex-end;
   padding-right: 100px;
 }
 
+.statlist{
+  display: flex;
+  justify-content:space-between;
+  padding: 0 100px 0 100px;
+}
+
+.analysis{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.statsec{
+  display: flex;
+}
+
+.statsec h2{
+  flex: 1;
+  background: #0A141A;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 20px 40px 20px 40px;
+  margin-bottom: 40px;
+}
+
+footer{
+  height: 40px;
+}
+
 /*** Typography *********/
 
 @font-face {
 	font-family: OutageCut;
-	src: url(Branding/"Outage Cut.ttf");
+	src: url(Branding/Outage Cut.ttf);
 }
 
 nav a{
   text-align: right;
-	margin-left: 40px;
+	margin-left: 60px;
   width: inherit;
   text-decoration: none;
   color: #fff;
-  padding: 40px 0 10px 0;
-}
-
-nav a:hover{
-  border-bottom: 3px solid #fff;
+  padding: 30px 0 10px 0;
 }
 
 h1{
+  font-family: 'OutageCut',  sans-serif;
 	font-size: 3em;
+  padding: 80px 0 40px 0;
 }
 
 h2{
@@ -42,12 +82,23 @@ h2{
 	font-size: 1.8em;
 }
 
-.statlist{	/*stats in folder format*/
-	background: #0b1013;
+.names h2{
+  padding: 20px 0 55px 0;
 }
 
-.statlist section h2{	/*h2(titles) of statistics folder section*/
-	background: #0b1013;
+.names ol li{
+  padding-bottom: 40px;
+}
+
+.analysis section{
+  background: #0B1013;
+}
+
+.analysis section ul{
+  display: flex;
+  background: #0B1013;
+  padding-left: 40px;
+  margin-bottom: 40px;
 }
 
 p{
@@ -58,7 +109,7 @@ p{
 
 .logo{
 	position: absolute;
-  top: 20px;
+  top: 15px;
 	left: 100px;
-	height: 60px;
+	height: 50px;
 }
