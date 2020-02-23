@@ -1,4 +1,5 @@
 import csv
+import json
 
 empty_list = []
 Person_id = 'Person_id'
@@ -48,12 +49,13 @@ for z in rank_list:
     counter += 1
     updated_list.append(y)
 
+f = open("All_Players_Ranking.txt", "w")
+
 updated_list2 = []
 for x in updated_list:
     sum_dict = {"Rank": x[0], "Player": x[1], "Team": x[2]}
-    updated_list2.append(sum_dict)
+    json_string = json.dumps(sum_dict)
+    f.write(json_string)
+    f.write(',')
 
-f = open("All_Players_Ranking.txt", "w")
-updated_list3 = str(updated_list2)
-f.write(updated_list3)
 f.close()
