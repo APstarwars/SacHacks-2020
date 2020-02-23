@@ -32,9 +32,12 @@ function playerParser() {
 
 function getTeamData(data) {
   document.getElementById("teamname").innerHTML = data;
+  document.getElementById("teamlogo").src = "images/teamlogos/" + data + ".png";
 }
 
 function getPlayerData(player, team) {
   document.getElementById("playername").innerHTML = player;
   document.getElementById("teamname").innerHTML = team;
+  document.getElementById("playerpic").src = "images/playerpics/" + player + ".png";
+  document.getElementById("teamlogo").src = "images/teamlogos/" + team + ".png";
 }
