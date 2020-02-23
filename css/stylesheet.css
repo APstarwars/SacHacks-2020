@@ -51,6 +51,10 @@ nav{
   margin-bottom: 40px;
 }
 
+.statset1 section, .statset2 section, .statset3 section{
+	display: flex;
+}
+
 footer{
   height: 40px;
 }
@@ -98,7 +102,7 @@ h2{
   background: #0B1013;
 }
 
-.analysis section ul{
+.analysis p{
   display: flex;
   background: #0B1013;
   padding-left: 40px;
