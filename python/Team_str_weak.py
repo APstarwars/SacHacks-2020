@@ -102,6 +102,7 @@ list_updated = [Rank, Nickname, Points, FG, three_pointer, Offensive_Rebounds, D
             Blocked_Shots, Points1, PT_Differential, Opp_FG, Opp_3P, Opp_OREB, Opp_DREB, Opp_AST,
             Opp_STL, Opp_TOV, Opp_BLK]
 
+sum_dict2 = {}
 
 f = open("Team_Weak_Str.txt", "w")
 f.write('[')
@@ -109,10 +110,10 @@ good_list.sort(reverse=True)
 for x in good_list:
     z = 0
     for y in list_updated:
-        sum_dict = {y: x[z]}
+        sum_dict = {y: x[z]} 
+        sum_dict2.update(sum_dict)
         z+=1
-
-    json_string = json.dumps(sum_dict)
+    json_string = json.dumps(sum_dict2)
     f.write(json_string)
     if x == good_list[20]:
         pass
