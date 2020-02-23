@@ -90,6 +90,10 @@ h2{
   padding-bottom: 40px;
 }
 
+#selStat, .currentStatSec{
+  color: #fff;
+}
+
 .analysis section{
   background: #0B1013;
 }

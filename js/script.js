@@ -1,7 +1,21 @@
 $(document).ready(function(){
+  $(".statsec h2").hover(
+    function(){
+      $(this).css({"color":"rgba(255, 255, 255, 1)"});
+      $(this).addClass("currentStatSec");
+    },
+    function(){
+      $(this).css({"color":"rgba(255, 255, 255, 0.5)"});
+      $(this).removeClass("currentStatSec");
+      $("#selStat").css({"color":"rgba(255, 255, 255, 1)"});
+    }
+  );
+
   $(".statsec h2").click(function(){
     $(".statsec h2").css({"background":"#0A141A", "color":"rgba(255, 255, 255, 0.5)"});
+    $(".statsec h2").removeAttr('id');
     $(this).css({"background":"#0b1013", "color":"rgba(255, 255, 255, 1)"});
+    $(this).attr('id','selStat');
   });
 
   $("h2.stat1").click(function(){
