@@ -154,11 +154,16 @@ p{
 
 .popout section{
 	display: flex;
+	align-items: center;
 }
 
 .popout img:first-child{
 	padding-right: 30px;
 	width: 200px;
+}
+
+.popout img:last-child{
+	height: 100px;
 }
 
 .popout h2{
