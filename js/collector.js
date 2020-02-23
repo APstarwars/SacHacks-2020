@@ -5,7 +5,7 @@ function parseDemo() {
       var myObj = JSON.parse(this.responseText);
       document.getElementById("demo").innerHTML = myObj.name;
     };
-    xmlhttp.open("GET", "json_demo.txt", true);
+    xmlhttp.open("GET", "data/json_demo.txt", true);
     xmlhttp.send();
 }
 
