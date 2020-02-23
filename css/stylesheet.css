@@ -79,6 +79,11 @@ nav a{
   padding: 30px 0 10px 0;
 }
 
+nav a:hover{
+	transition: all 100ms cubic-bezier(0.795, 0.005, 0.325, 1.005);
+	border-bottom: 5px solid rgba(95, 152, 179, 0.5);
+}
+
 h1{
   font-family: 'Outage-Cut',  sans-serif;
 	font-size: 3em;
@@ -92,10 +97,12 @@ h2{
 
 .names h2{
   padding: 20px 0 55px 0;
+	padding-right: 20px;
 }
 
 .names ol li{
   padding-bottom: 40px;
+	padding-right: 20px;
 }
 
 #selStat, .currentStatSec{
