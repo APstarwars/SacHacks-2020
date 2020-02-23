@@ -5,7 +5,7 @@ function teamsParser() {
       var myObj = JSON.parse(this.responseText);
       for (let x = 0; x < myObj.length; x++) {
         document.getElementsByClassName("teams")[x].innerHTML = myObj[x].Team;
-        document.getElementsByClassName("FGM")[x].innerHTML = myObj[x].FG;
+        document.getElementsByClassName("FGM")[x].innerHTML = myObj[x].FGP;
         document.getElementsByClassName("PTS")[x].innerHTML = myObj[x].Points;
         document.getElementsByClassName("AST")[x].innerHTML = myObj[x].Assists;
       }
