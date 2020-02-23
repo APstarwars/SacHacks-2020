@@ -1,12 +1,127 @@
-body {
-  margin: auto;
-  font-family: sans-serif;
+body{
+	margin: auto;
+	font-family: 'Saira', sans-serif;
+	background: #0c1A22;
+	color: #fff;
 }
 
 div {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
-/****/
+header{
+  padding-bottom: 100px;
+  width: 100vw;
+}
+
+header section{
+  padding-left: 100px;
+}
+
+nav{
+	height: 80px;
+	background: #050505;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+
+.statlist{
+  display: flex;
+  justify-content:space-between;
+  padding: 0 100px 0 100px;
+}
+
+.analysis{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.statsec{
+  display: flex;
+}
+
+.statsec h2{
+  flex: 1;
+  background: #0A141A;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 20px 40px 20px 40px;
+  margin-bottom: 40px;
+}
+
+footer{
+  height: 40px;
+}
+
+/*** Typography *********/
+
+@font-face {
+	font-family: Outage-Cut;
+	src: url("../Branding/Outage-Cut.ttf");
+}
+
+nav a{
+  text-align: right;
+	margin-left: 60px;
+  width: inherit;
+  text-decoration: none;
+  color: #fff;
+  padding: 30px 0 10px 0;
+}
+
+h1{
+  font-family: 'Outage-Cut',  sans-serif;
+	font-size: 3em;
+  padding: 80px 0 40px 0;
+}
+
+h2{
+	font-family: 'Outage-Cut',  sans-serif;
+	font-size: 1.8em;
+}
+
+.names h2{
+  padding: 20px 0 55px 0;
+}
+
+.names ol li{
+  padding-bottom: 40px;
+}
+
+.analysis section{
+  background: #0B1013;
+}
+
+.analysis section ul{
+  display: flex;
+  background: #0B1013;
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.analysis section ul{
+  width: inherit;
+}
+
+.analysis section ul li{
+  display: flex;
+}
+
+.analysis section ul li p{
+  padding-right: 40px;
+}
+
+p{
+	font-size: 1em;
+}
+
+/*** Image *********/
+
+.logo{
+	position: absolute;
+  top: 15px;
+	left: 100px;
+	height: 50px;
+}
