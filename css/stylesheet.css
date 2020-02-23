@@ -15,6 +15,10 @@ header{
   width: 100%;
 }
 
+#home header{
+	padding-bottom: 72px;
+}
+
 header section{
   padding-left: 100px;
 }
@@ -68,6 +72,10 @@ footer{
 @font-face {
 	font-family: Outage-Cut;
 	src: url("../Branding/Outage-Cut.ttf");
+}
+
+header p{
+	line-height: 1.8em;
 }
 
 nav a{
@@ -136,6 +144,10 @@ p{
 	font-size: 1em;
 }
 
+.weak{
+	color: red;
+}
+
 /*** Image *********/
 
 .logo{
@@ -149,7 +161,7 @@ p{
   position: absolute;
   top: 240px;
   right: 100px;
-	height: 80px;
+	height: 100px;
 	border-radius:5px;
 }
 

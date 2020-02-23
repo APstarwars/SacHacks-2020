@@ -4,10 +4,10 @@ function teamsParser() {
     xmlhttp.onload = function() {
       var myObj = JSON.parse(this.responseText);
       for (let x = 0; x < myObj.length; x++) {
-        document.getElementsByClassName("teams")[x].innerHTML = myObj[x].Team;
-        document.getElementsByClassName("FGM")[x].innerHTML = myObj[x].FGP;
-        document.getElementsByClassName("PTS")[x].innerHTML = myObj[x].Points;
-        document.getElementsByClassName("AST")[x].innerHTML = myObj[x].Assists;
+        document.getElementsByClassName("teams")[x].innerHTML = (x+1) + ". " + myObj[x].Team;
+        document.getElementsByClassName("FGM")[x].innerHTML = (x+1) + ". " + myObj[x].FGP;
+        document.getElementsByClassName("PTS")[x].innerHTML = (x+1) + ". " + myObj[x].Points;
+        document.getElementsByClassName("AST")[x].innerHTML = (x+1) + ". " + myObj[x].Assists;
       }
     };
     xmlhttp.open("GET", "data/Team_Weak_Str.txt", true);
@@ -19,7 +19,7 @@ function playerParser() {
     xmlhttp.onload = function() {
       var myObj = JSON.parse(this.responseText);
       for (let x = 0; x < myObj.length; x++) {
-        document.getElementsByClassName("players")[x].innerHTML = myObj[x].Player;
+        document.getElementsByClassName("players")[x].innerHTML = (x+1) + ". " + myObj[x].Player;
         document.getElementsByClassName("players")[x].setAttribute("id", myObj[x].Team);
         document.getElementsByClassName("FGM")[x].innerHTML = myObj[x].FGM;
         document.getElementsByClassName("PTS")[x].innerHTML = myObj[x].PTS;
