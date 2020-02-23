@@ -140,3 +140,26 @@ p{
   left: 800px;
 	height: 200px;
 }
+
+.popout{
+	position:absolute;
+	background: rgba(13, 57, 77, 0.9);
+	padding: 30px;
+}
+
+.popout section{
+	display: flex;
+}
+
+.popout img:first-child{
+	padding-right: 30px;
+	width: 200px;
+}
+
+.popout h2{
+	padding-top: 30px;
+}
+
+.popout p{
+	padding-top: 15px;
+}
