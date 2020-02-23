@@ -1,78 +1,28 @@
-body {
-  margin: auto;
+body{
+	margin: auto;
 	font-family: 'Saira', sans-serif;
 	background: #0c1A22;
 	color: #fff;
 }
 
-header {
-  width: 100%;
-  text-align: center;
-}
-
-nav {
-  height: 100px;
+nav{
+	height: 100px;
 	background: #050505;
-}
-
-img {
-  width: 50px;
-  height: 50px;
-}
-
-div {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+	text-align: right;
+	margin-left: 40px;
+	align-items: center;
 }
 
-a {
-  color: white;
-  float: right;
-  padding: 2% 4% 2% 4%;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.row {
-  width: 100%;
-}
-
-.column {
-  float: left;
-  padding: 10px;
-}
-
-.column.name {
-  width: 33.33%;
-  background-color: blue;
-}
-
-.column.list {
-  width: 66.66%;
-  background-color: brown;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*-----Typography------*/
+/*** Typography *********/
 
 @font-face {
 	font-family: OutageCut;
-	src: url(fonts/branding/Outage_Cut.ttf);
+	src: url(Branding/Outage_Cut.ttf);
 }
 
 h1{
-  font-size: 3em;
-  float: left;
+	font-size: 3em;
 }
 
 h2{
@@ -80,14 +30,22 @@ h2{
 	font-size: 1.8em;
 }
 
-/* .statlist{	//stats in folder format
+.statlist{	//stats in folder format
 	background: #0b1013;
 }
 
 .statlist h2{	//h2(titles) of statistics folder section
 	background: #0b1013;
-} */
+}
 
 p{
 	font-size: 1em;
+}
+
+/*** Image *********/
+
+.logo{
+	position: absolute;
+	left: 100px;
+	height: 60px;
 }
