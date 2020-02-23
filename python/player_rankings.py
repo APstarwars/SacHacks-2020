@@ -50,12 +50,16 @@ for z in rank_list:
     updated_list.append(y)
 
 f = open("All_Players_Ranking.txt", "w")
-
+f.write('[')
 updated_list2 = []
 for x in updated_list:
     sum_dict = {"Rank": x[0], "Player": x[1], "Team": x[2]}
     json_string = json.dumps(sum_dict)
     f.write(json_string)
-    f.write(',')
+    if x[0] == len(updated_list):
+        pass
+    else:
+        f.write(',')
 
+f.write(']')
 f.close()
