@@ -164,6 +164,7 @@ p{
 
 .popout img:last-child{
 	height: 100px;
+	width: 100px;
 }
 
 .popout h2{
