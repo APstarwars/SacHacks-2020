@@ -13,7 +13,6 @@
 </head>
 
 <body>
-  <script>teamsParser()</script>
   <div>
     <header>
         <nav>
@@ -26,6 +25,13 @@
           <p>Presentation of Analyzed Team Data.</p>
         </section>
     </header>
+
+    <section class="popout" style="display:none">
+      <section>
+        <img src="#" alt="Team Logo" class="teamlogo">
+      </section>
+      <h2 id="teamname">Team Name</h2>
+    </section>
 
     <section class="statlist">
       <section class="names">
@@ -66,7 +72,7 @@
         </section>
 
 <!-- Second set of stats -->
-        <section class="statset2">
+        <section class="statset2" style="display:none">
           <section>
             <p>1111%</p>
             <p>Analysis of stat</p>
@@ -86,7 +92,7 @@
         </section>
 
 <!-- Third set of stats -->
-        <section class="statset3">
+        <section class="statset3" style="display:none">
           <section>
             <p>2222%</p>
             <p>Analysis of stat</p>
