@@ -59,7 +59,7 @@ footer{
 
 @font-face {
 	font-family: Outage-Cut;
-	src: url(Branding/Outage-Cut.ttf);
+	src: url("../Branding/Outage-Cut.ttf");
 }
 
 nav a{
