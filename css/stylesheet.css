@@ -134,6 +134,13 @@ p{
 	height: 50px;
 }
 
+.gif {
+  position: absolute;
+  top: 130px;
+  left: 800px;
+	height: 200px;
+}
+
 .popout{
 	position:absolute;
 	background: rgba(13, 57, 77, 0.9);
