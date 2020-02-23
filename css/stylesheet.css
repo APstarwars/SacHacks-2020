@@ -11,6 +11,7 @@ div {
 }
 
 header{
+	padding-top: 80px;
   padding-bottom: 100px;
   width: 100%;
 }
@@ -24,11 +25,29 @@ header section{
 }
 
 nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
 	height: 80px;
 	background: #050505;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 100px;
+  justify-content:flex-end;
+  padding-right: 100vw;
+	z-index: 1;
+}
+
+li{
+	counter-increment: inst;
+}
+
+li::before {
+  content: counter(inst) ". ";
+	color: #999;
+}
+
+::selection {
+  color: white;
+	background: #ca2030;
 }
 
 .statlist{
@@ -81,10 +100,14 @@ header p{
 nav a{
   text-align: right;
 	margin-left: 60px;
-  width: inherit;
   text-decoration: none;
   color: #fff;
   padding: 30px 0 10px 0;
+	overflow: hidden;
+}
+
+nav a:last-child{
+	margin-right: 100px;
 }
 
 nav a:hover{
@@ -109,8 +132,10 @@ h2{
 }
 
 .names ol li{
+	position: relative;
   padding-bottom: 40px;
 	padding-right: 20px;
+	left: -10px;
 }
 
 #selStat, .currentStatSec{
@@ -127,6 +152,12 @@ h2{
   padding-left: 40px;
   margin-bottom: 40px;
 }
+
+.analysis p:last-child{
+  padding-left: 5px;
+	color: #aaa;
+}
+
 
 .analysis section ul{
   width: inherit;
@@ -145,7 +176,7 @@ p{
 }
 
 .weak{
-	color: red;
+	color: #ca2030;
 }
 
 /*** Image *********/
@@ -169,6 +200,7 @@ p{
 	position:absolute;
 	background: rgba(13, 57, 77, 0.9);
 	padding: 30px;
+	z-index: 2;
 }
 
 .popout section{
