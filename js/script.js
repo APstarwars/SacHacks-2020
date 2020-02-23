@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $(".statsec h2").hover(
     function(){
-      $(this).css({"color":"rgba(255, 255, 255, 1)"});
+      $(this).css({"color":"rgba(255, 255, 255, 1)", "transition":"all 200ms cubic-bezier(0.795, 0.005, 0.325, 1.005)"});
       $(this).addClass("currentStatSec");
     },
     function(){
