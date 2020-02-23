@@ -9,16 +9,28 @@ nav{
 	height: 100px;
 	background: #050505;
   display: flex;
-	text-align: right;
-	margin-left: 40px;
-	align-items: center;
+  justify-content: flex-end;
+  padding-right: 100px;
 }
 
 /*** Typography *********/
 
 @font-face {
 	font-family: OutageCut;
-	src: url(Branding/Outage_Cut.ttf);
+	src: url(Branding/"Outage Cut.ttf");
+}
+
+nav a{
+  text-align: right;
+	margin-left: 40px;
+  width: inherit;
+  text-decoration: none;
+  color: #fff;
+  padding: 40px 0 10px 0;
+}
+
+nav a:hover{
+  border-bottom: 3px solid #fff;
 }
 
 h1{
@@ -30,11 +42,11 @@ h2{
 	font-size: 1.8em;
 }
 
-.statlist{	//stats in folder format
+.statlist{	/*stats in folder format*/
 	background: #0b1013;
 }
 
-.statlist h2{	//h2(titles) of statistics folder section
+.statlist section h2{	/*h2(titles) of statistics folder section*/
 	background: #0b1013;
 }
 
@@ -46,6 +58,7 @@ p{
 
 .logo{
 	position: absolute;
+  top: 20px;
 	left: 100px;
 	height: 60px;
 }
