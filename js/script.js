@@ -35,4 +35,15 @@ $(document).ready(function(){
     $("section.statset2").css({"display":"none"});
     $("section.statset3").css({"display":"block"});
   });
+
+  $(".teams, .players").hover(
+    function(e){
+      $(".popout").css({"display":"block"});
+      $(".popout").css("top", (e.pageY - 20)+"px")
+      $(".popout").css("left", (e.pageX + 20)+"px")
+    },
+    function(){
+      $(".popout").css({"display":"none"});
+    }
+  );
 });
